@@ -1,65 +1,78 @@
 body{
   font-family: Arial, sans-serif;
   margin:0;
-  padding:20px;
-  background: linear-gradient(180deg, #ff5a2f, #d84315);
+  height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+
+  /* FONDO NARANJA COMO EL DE LA IMAGEN */
+  background: linear-gradient(180deg, #f4511e, #d84315);
 }
 
-/* TARJETAS */
-.demo-form-card, .resultado-card{
-  background:#f5f5f5;
-  border-radius:30px;
-  padding:25px;
-  max-width:350px;
-  margin:20px auto;
-  box-shadow:0 15px 30px rgba(0,0,0,0.2);
+.demo-form-card{
+  background:#eeeeee;
+  border-radius:40px;
+  padding:40px 30px;
+  width:90%;
+  max-width:360px;
+  box-shadow:0 20px 40px rgba(0,0,0,0.25);
 }
 
-/* TITULOS */
+/* TITULO */
 h3{
   color:#e64a19;
-  font-size:24px;
+  font-size:32px;
   margin-bottom:10px;
 }
 
+/* TEXTO */
 p{
   color:#555;
-  margin-bottom:20px;
+  font-size:18px;
+  margin-bottom:25px;
 }
 
 /* FORM */
 form{
   display:flex;
   flex-direction:column;
-  gap:15px;
+  gap:18px;
 }
 
 label{
   font-weight:bold;
+  font-size:20px;
   color:#333;
 }
 
+/* INPUTS */
 input{
-  padding:15px;
-  border-radius:20px;
-  border:2px solid #ddd;
+  padding:18px;
+  border-radius:25px;
+  border:3px solid #ddd;
+  font-size:18px;
   outline:none;
-  font-size:14px;
+  background:#f5f5f5;
+}
+
+input::placeholder{
+  color:#999;
 }
 
 input:focus{
-  border-color:#ff5a2f;
+  border-color:#ff5722;
 }
 
-/* BOTON */
+/* BOTÓN GRANDE */
 button{
-  margin-top:10px;
-  padding:15px;
+  margin-top:20px;
+  padding:18px;
   border:none;
-  border-radius:30px;
-  background: linear-gradient(90deg, #ff5a2f, #ff7043);
+  border-radius:40px;
+  background: linear-gradient(90deg, #f4511e, #ff7043);
   color:white;
-  font-size:16px;
+  font-size:20px;
   font-weight:bold;
   cursor:pointer;
   transition:0.3s;
@@ -67,14 +80,4 @@ button{
 
 button:hover{
   transform:scale(1.03);
-  box-shadow:0 5px 15px rgba(0,0,0,0.2);
-}
-
-/* RESULTADO */
-#resultado{
-  margin-top:10px;
-  padding:15px;
-  border-radius:15px;
-  background:white;
-  font-size:14px;
 }
